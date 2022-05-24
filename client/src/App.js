@@ -1,8 +1,19 @@
+// these can be deleted
 import logo from './logo.svg';
 import './App.css';
 
+// import dependencies/libraries
+
+// create link from GraphQL
+
+// Set Auth token
+
+// set client
+
+// create main page structure
 function App() {
   return (
+    // all of this content of return statement gets deleted
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -22,4 +33,5 @@ function App() {
   );
 }
 
+// keep this
 export default App;
