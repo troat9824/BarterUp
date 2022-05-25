@@ -1,4 +1,5 @@
 {
+
     "name": "barterup",
     "version": "1.0.0",
     "description": "",
@@ -22,4 +23,5 @@
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^6.3.4"
     }
+
 }
