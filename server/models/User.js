@@ -21,9 +21,20 @@ const userSchema = new Schema(
             type: String,
             required: true,
             minlength: 8
+        },
+        listings: [
+            {
+                type: Schema.Types.ObjectId,
+            ref: 'Listing'
+            }
+        ]
+    },
+    {
+        toJSON: {
+            virtuals: true
         }
     }
-)
+);
 
 // set up pre-save middleware to create password
 userSchema.pre('save', async function(next) {
@@ -32,7 +43,7 @@ userSchema.pre('save', async function(next) {
         this.password = await bcrypt.hash(this.password, saltRounds);
     }
 
-// function
+    next();
 });
 
 // compare the incoming password with the hashed password

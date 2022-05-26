@@ -1,9 +1,4 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 205f83ea0fd380203d00a2b96c0a6791602b62cf
     "name": "barterup",
     "version": "1.0.0",
     "description": "",
@@ -27,27 +22,5 @@
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^6.3.4"
     }
-<<<<<<< HEAD
-=======
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "express": "^4.18.1",
-    "graphql": "^16.5.0",
-    "mongoose": "^6.3.4"
-  }
->>>>>>> 69f858eeddaa6a9eb793d7446503f48d4b466e22
-=======
-
->>>>>>> 205f83ea0fd380203d00a2b96c0a6791602b62cf
 }
+
