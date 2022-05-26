@@ -51,5 +51,10 @@ userSchema.methods.isCorrectPassword = async function(password) {
     return bcrypt.compare(password, this.password);
 };
 
+// get number of listings
+userSchema.virtual('listingCount').get(function() {
+    return this.listings.length;
+});
+
 const User = model('User', userSchema);
 module.exports = User;

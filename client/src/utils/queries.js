@@ -60,7 +60,7 @@ export const QUERY_ME = gql`
       email
       listings {
         _id
-        listingsText
+        listingText
         createdAt
         recommendationCount
         recommendations {
@@ -74,6 +74,7 @@ export const QUERY_ME = gql`
   }
 `;
 
+// Do we need this (if no, change in Pages files)
 export const QUERY_ME_BASIC = gql`
   {
     me {
