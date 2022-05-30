@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/troat9824/BarterUp/issues"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
 }
