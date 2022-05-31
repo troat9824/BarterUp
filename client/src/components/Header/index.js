@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
 
 const Header = () => {
-    const logout = event => {
-        event.preventDefault();
-        Auth.logout();
-    };
+    // const logout = event => {
+    //     event.preventDefault();
+    //     Auth.logout();
+    // };
 
     return (
-        {/* JSX page template */}
+        <div>
+            <h1>Yo</h1>
+        </div>
     );
 };
 

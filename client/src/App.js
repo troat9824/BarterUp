@@ -6,6 +6,8 @@ import {
   createHttpLink
 } from '@apollo/client';
 import { setContext} from '@apollo/client/link/context';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 //import components
 import Header from './components/Header';
@@ -17,6 +19,7 @@ import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 import SingleListing from './pages/SingleListing';
+import NoMatch from './pages/NoMatch';
 
 // create link from GraphQL
 const httpLink = createHttpLink({
