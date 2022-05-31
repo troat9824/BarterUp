@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
 return (
     <footer className="">
-        <div className="container">
+        <div className="container text-center">
             &copy;{new Date().getFullYear()} by Franklin Brown, 
                                                 Taylor Vaughn,
                                                 Angel Sanchez,

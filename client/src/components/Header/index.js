@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <header className="bg-secondary mb-4 py-2 flex-row align-center">
-          <div className="container flex-row justify-space-between-lg justify-center align-center">
+          <div className="text-center nav-bar">
             <Link to="/">
               <h1>BarterUp</h1>
             </Link>
@@ -26,8 +26,10 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <Link to="/login">Login</Link>
-                  <Link to="/signup">Signup</Link>
+                  <Link to="/login"> Login  </Link>
+                  <Link to="/signup"> Signup  </Link>
+                  <Link to="/profile"> Profile  </Link>
+                  <Link to="/listings"> All Listings  </Link>
                 </>
               )}
             </nav>
@@ -35,5 +37,7 @@ const Header = () => {
         </header>
       );
 };
+
+
 
 export default Header;

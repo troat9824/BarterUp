@@ -20,6 +20,7 @@ import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 import SingleListing from './pages/SingleListing';
 import NoMatch from './pages/NoMatch';
+import AllListings from './pages/AllListings';
 
 // create link from GraphQL
 const httpLink = createHttpLink({
@@ -68,7 +69,11 @@ function App() {
               <Route 
                 path="/profile" 
                 element={<Profile />} 
-              />
+              />              
+              <Route 
+              path="/listings" 
+              element={<AllListings />} 
+            />
               <Route 
                 path="/listing/:id" 
                 element={<SingleListing />} 
