@@ -25,11 +25,11 @@ const resolvers = {
                 .select('-__v -password')
                 .populate('listings');
         },
-        thoughts: async (parent, { username }) => {
+        listings: async (parent, { username }) => {
             const params = username ? { username } : {};
             return Listing.find(params).sort({ createdAt: -1 });
         },
-        thought: async (parent, { _id }) => {
+        listing: async (parent, { _id }) => {
             return Listing.findOne({ _id });
         }
     },

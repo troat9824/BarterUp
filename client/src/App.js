@@ -1,8 +1,6 @@
-// these can be deleted
-import logo from './logo.svg';
-import './App.css';
-
 // import dependencies/libraries
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   ApolloClient,
   InMemoryCache,
@@ -38,7 +36,6 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
-
 // set client
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
@@ -48,12 +45,17 @@ const client = new ApolloClient({
 // create main page structure
 function App() {
   return (
-    // all of this content of return statement gets deleted
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      <Router>
+      {/* This is where the content goes*/}
+        <div className="App">
+          <header className="App-header">
+            <h1>Hello World</h1>
+          </header>
+        </div>
+      </Router>
+    </ApolloProvider>
+    
   );
 }
 
