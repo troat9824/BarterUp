@@ -10,7 +10,7 @@ import ListingList from '../components/ListingList';
 // import { ADD_FRIEND } from '../utils/mutations';
 // import Auth from '../utils/auth';
 
-// const Profile = (props) => {
+const Profile = (props) => {
 //   const { username: userParam } = useParams();
 
 //   const [addFriend] = useMutation(ADD_FRIEND);
@@ -81,5 +81,5 @@ import ListingList from '../components/ListingList';
 //       <div className="mb-3">{!userParam && <ThoughtForm />}</div>
 //     </div>
 //   );
-// };
+};
 export default Profile;
