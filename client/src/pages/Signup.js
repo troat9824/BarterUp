@@ -42,7 +42,7 @@ const Signup = () => {
             <div className="row collapse expanded">
             <div className="small-12 medium-6 column small-order-2 medium-order-1">
             <div className="login-box-form-section">
-        <h1 className="login-box-title text-center">Sign up</h1>
+        <h1 className="text-size text-center">Sign up</h1>
         <form onSubmit={handleFormSubmit}>
         <input className="login-box-input text-center" 
             type="text" 
@@ -62,10 +62,7 @@ const Signup = () => {
             placeholder="Password" 
             value={formState.password}
             onChange={handleChange} />
-        <input className="login-box-submit-button" 
-            type="submit" 
-            name="signup_submit" 
-            value="Sign me up" />
+        <button type="submit" className="sign-in-form-button">Sign Me Up!</button>
         </form>
 
         {error && <div>Signup failed</div>}

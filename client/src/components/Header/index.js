@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <header className="bg-secondary mb-4 py-2 flex-row align-center">
-          <div className="text-center nav-bar">
+          <div className="text-center nav-bar title-font">
             <Link to="/">
               <h1>BarterUp</h1>
             </Link>
