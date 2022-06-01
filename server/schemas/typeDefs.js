@@ -10,7 +10,8 @@ const typeDefs = gql`
 
     type Listing {
         _id: ID
-        thoughtText: String
+        listingTitle: String
+        listingText: String
         createdAt: String
         username: String
         recommendationCount: Int

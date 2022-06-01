@@ -1,8 +1,10 @@
 import React from 'react';
+import ListingList from '../components/ListingList';
 const AllListings = () => {
     return (
-        <div>
-            <h1>Hello World</h1>
+        <div className='text-center'>
+            <h2>See what's available!</h2>
+            <ListingList />
         </div>
     )
 }

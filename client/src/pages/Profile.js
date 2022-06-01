@@ -30,6 +30,7 @@ const Profile = (props) => {
   }
 
   if (!user?.username) {
+    console.log("working 1?");
     return (
         <div className='text-center'>
             <h4>
@@ -44,7 +45,7 @@ const Profile = (props) => {
   
 
   };
-
+console.log("working?");
   return (
     <div>
       <div className="flex-row mb-3">

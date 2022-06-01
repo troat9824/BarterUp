@@ -25,15 +25,15 @@ const Signup = () => {
     const handleFormSubmit = async (event) => {
         event.preventDefault();
 
-        // try {
-        //     const { data } = await addUser({
-        //         variables: { ...formState },
-        //     });
+        try {
+            const { data } = await addUser({
+                variables: { ...formState },
+            });
 
-        //     Auth.login(data.addUser.token);
-        // } catch (e) {
-        //     console.error(e);
-        // }
+            Auth.login(data.addUser.token);
+        } catch (e) {
+            console.error(e);
+        }
     };
 
     return (
