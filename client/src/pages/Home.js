@@ -5,6 +5,7 @@ import ListingForm from '../components/ListingForm';
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
 import { QUERY_LISTINGS, QUERY_ME_BASIC } from '../utils/queries';
+import barterPhoto from '../assets/Barter-photo.jpeg'
 
 const Home = () => {
     const { loading, data } = useQuery(QUERY_LISTINGS);
@@ -14,7 +15,14 @@ const Home = () => {
     const loggedIn = Auth.loggedIn();
 
     return (
-        <main>
+        <main className=''>
+            <h1 className='text-center'>Welcome to BarterUp!</h1>
+            <img src={barterPhoto} alt="Barter-Description" className='barterPhoto' />
+            <p className='text-center'>A place to trade or rent your items to other people. <br/>
+                Have you ever needed to rent a car for a day, but didn't want to pay rental prices? <br/>
+                Or maybe you have an electric guitar, and want to trade for an acoustic. <br/>
+                Whatever the case may be, check BarterUp to see if there's anyone in your area willing to barter with you!</p>
+
             {/* <div className='flex-row justify-space-between'>
                 {loggedIn && (
                     <div className='col-12 mb-3'>
