@@ -17,11 +17,11 @@ const Home = () => {
     return (
         <main className=''>
             <h1 className='text-center'>Welcome to BarterUp!</h1>
-            <img src={barterPhoto} alt="Barter-Description" className='barterPhoto' />
             <p className='text-center'>A place to trade or rent your items to other people. <br/>
                 Have you ever needed to rent a car for a day, but didn't want to pay rental prices? <br/>
                 Or maybe you have an electric guitar, and want to trade for an acoustic. <br/>
                 Whatever the case may be, check BarterUp to see if there's anyone in your area willing to barter with you!</p>
+                <img src={barterPhoto} alt="Barter-Description" className='barterPhoto' />
 
             {/* <div className='flex-row justify-space-between'>
                 {loggedIn && (

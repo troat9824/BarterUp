@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
+import signupPhoto from '../assets/signup-photo.jpeg';
 
 import Auth from '../utils/auth';
 
@@ -62,6 +63,7 @@ const Signup = () => {
             placeholder="Password" 
             value={formState.password}
             onChange={handleChange} />
+            <img src={signupPhoto} alt="A computer login" className='signupPhoto' />
         <button type="submit" className="sign-in-form-button">Sign Me Up!</button>
         </form>
 
