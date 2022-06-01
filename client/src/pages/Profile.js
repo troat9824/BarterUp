@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
+import oops from '../assets/oops.jpeg';
 
 import ListingForm from '../components/ListingForm';
 import AllListings from '../components/AllListings';
@@ -30,10 +31,15 @@ const Profile = (props) => {
 
   if (!user?.username) {
     return (
-      <h4>
-        You need to be logged in to see this. Use the navigation links above to
-        sign up or log in!
-      </h4>
+        <div className='text-center'>
+            <h4>
+                You need to be logged in to see this. Use the navigation links above to
+                sign up or log in!
+            </h4>
+            <img src={oops} alt="Oops" className='oopsPhoto' />
+
+        </div>
+      
     );
   
 

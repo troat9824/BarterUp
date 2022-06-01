@@ -84,7 +84,12 @@ label {
   margin-right: auto;
   display: block;
 }
-
+.oopsPhoto {
+  width: 25%;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .computerPhoto {
   width: 25%;
   height: 25%;
