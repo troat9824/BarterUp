@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
+
 import { useMutation } from '@apollo/client';
 import { ADD_LISTING } from '../../utils/mutations';
 import { QUERY_LISTINGS, QUERY_ME } from '../../utils/queries';
-import Cloud from '../../utils/cloudinary';
+import CloudinaryUploadWidget from '../../utils/cloudinary';
 import { renderMatches } from 'react-router-dom';
-import CloudinaryUploadWidget from "../../utils/cloudinary";
 
 const ListingForm = () => {
     const [listingText, setListingText] = useState('');
@@ -61,8 +61,8 @@ const ListingForm = () => {
                     placeholder='yell about it'
                     defaultValue={listingText}
                 ></input>
-                    <div className="dnj7tfymj">
-                        <h1>ml_default</h1>
+                    <div className="App">
+                        <h1>Cloudinary</h1>
                         <h2>Upload Widget</h2>
                         <CloudinaryUploadWidget />
                     </div>

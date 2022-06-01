@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
+
 const ListingList = ({ listings, title }) => {
     if (!listings.length) {
         return <h3>No Listings Yet!</h3>;
@@ -8,7 +10,7 @@ const ListingList = ({ listings, title }) => {
 
     return (
         <div>
-            <h3>{title}</h3>
+            {/* <h3>{title}</h3>
             {listings &&
                 listings.map(listing => (
                 <div key={listing._id} className="card mb-3">
@@ -33,7 +35,7 @@ const ListingList = ({ listings, title }) => {
                     </Link>
                     </div>
                 </div>
-            ))}
+            ))} */}
         </div>
     )
 };
