@@ -23,7 +23,7 @@ const Home = () => {
                 Whatever the case may be, check BarterUp to see if there's anyone in your area willing to barter with you!</p>
                 <img src={barterPhoto} alt="Barter-Description" className='barterPhoto' />
 
-            {/* <div className='flex-row justify-space-between'>
+            <div className='flex-row justify-space-between'>
                 {loggedIn && (
                     <div className='col-12 mb-3'>
                         <ListingForm />
@@ -39,7 +39,7 @@ const Home = () => {
                         />
                     )}
                 </div>
-            </div> */}
+            </div>
         </main>
     )
 
