@@ -3,7 +3,6 @@ import { Navigate, useParams } from 'react-router-dom';
 import oops from '../assets/oops.jpeg';
 
 import ListingForm from '../components/ListingForm';
-import AllListings from '../components/AllListings';
 import ListingList from '../components/ListingList';
 
 import { useQuery, useMutation } from '@apollo/client';
@@ -30,7 +29,7 @@ const Profile = (props) => {
   }
 
   if (!user?.username) {
-    console.log("working 1?");
+    
     return (
         <div className='text-center'>
             <h4>
@@ -45,7 +44,7 @@ const Profile = (props) => {
   
 
   };
-console.log("working?");
+
   return (
     <div>
       <div className="flex-row mb-3">
