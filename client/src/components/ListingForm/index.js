@@ -6,6 +6,7 @@ import { QUERY_LISTINGS, QUERY_ME } from '../../utils/queries';
 
 const ListingForm = () => {
     const [listingText, setListingText] = useState('');
+    const [listingTitle, setListingTitle] = useState('');
     
     const [addListing, { error }] = useMutation(ADD_LISTING, {
         update(cache, { data: { addListing } }) {
@@ -33,7 +34,7 @@ const ListingForm = () => {
 
         try {
             await addListing({
-                variables: { listingText }
+                variables: { listingText, listingTitle }
             });
 
             setListingText('');
