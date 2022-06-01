@@ -49,14 +49,14 @@ const ListingForm = () => {
                 {error && <span>Something went wrong...</span>}
             </p>
             <form onSubmit={handleFormSubmit}>
-                <textarea
+                <input
                     placeholder='Whatcha got?'
-                    value={listingTitle}
-                ></textarea>
-                <textarea
+                    defaultValue={listingTitle}
+                ></input>
+                <input
                     placeholder='yell about it'
-                    value={listingText}
-                ></textarea>
+                    defaultValue={listingText}
+                ></input>
                 <button type="submit">Submit</button>
             </form>
         </div>
