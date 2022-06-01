@@ -28,7 +28,6 @@ export const ADD_LISTING = gql`
   mutation addListing($listingText: String!) {
     addListing(listingText: $listingText) {
       _id
-      listingText
       createdAt
       username
       recommendationCount

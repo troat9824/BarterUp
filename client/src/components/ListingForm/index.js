@@ -12,7 +12,7 @@ const ListingForm = () => {
         update(cache, { data: { addListing } }) {
 
             try {
-                const { me } = cache.readQuery({ quert: QUERY_ME });
+                const { me } = cache.readQuery({ query: QUERY_ME });
                 cache.writeQuery({
                     query: QUERY_ME,
                     data: { me: { ...me, listings: [...me.listings, addListing] } },
