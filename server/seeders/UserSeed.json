@@ -1,8 +1,8 @@
 [
     {
-        "username" : "",
-        "email" : "",
-        "password" : "",
+        "username" : "tayray",
+        "email" : "tayray@gmail.com",
+        "password" : "password",
         "listings" : [],
         "recommendations" : []
     },

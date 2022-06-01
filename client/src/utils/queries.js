@@ -4,7 +4,7 @@ export const QUERY_LISTINGS = gql`
   query listings($username: String) {
     listings(username: $username) {
       _id
-      listingText
+      description
       createdAt
       username
       recommendationCount
@@ -22,7 +22,7 @@ export const QUERY_LISTING = gql`
   query listing($id: ID!) {
     listing(_id: $id) {
       _id
-      listingText
+      description
       createdAt
       username
       recommendationCount
@@ -44,7 +44,7 @@ export const QUERY_USER = gql`
       email
       listings {
         _id
-        listingText
+        description
         createdAt
         reactionCount
       }
@@ -60,7 +60,7 @@ export const QUERY_ME = gql`
       email
       listings {
         _id
-        listingText
+        description
         createdAt
         recommendationCount
         recommendations {
@@ -83,7 +83,7 @@ export const QUERY_ME_BASIC = gql`
       email
       listings {
         _id
-        listingText
+        description
         createdAt
         username
         recommendationCount

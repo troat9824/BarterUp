@@ -10,6 +10,7 @@ const typeDefs = gql`
 
     type Listing {
         _id: ID
+        description: String
         createdAt: String
         username: String
         recommendationCount: Int
@@ -40,7 +41,7 @@ const typeDefs = gql`
     type Mutation {
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
-        addListing(listingText: String!): Listing
+        addListing(description: String!): Listing
         addRecommendation(listingId: ID!, recommendationBody: String!): Listing
     }
 `;

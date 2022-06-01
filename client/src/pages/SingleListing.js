@@ -23,13 +23,11 @@ const SingleListing = (props) => {
             <div className="card mb-3">
                 <p className="card-header">
                 <span style={{ fontWeight: 700 }} className="text-light">
-                    {listing.listingTitle}
                     {listing.username}
                 </span>{' '}
                 listed on {listing.createdAt}
                 </p>
                 <div className="card-body">
-                <p>{listing.listingText}</p>
                 </div>
             </div>
         </div>

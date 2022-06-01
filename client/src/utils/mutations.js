@@ -25,10 +25,10 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_LISTING = gql`
-  mutation addListing($listingText: String!) {
-    addListing(listingText: $listingText) {
+  mutation addListing($description: String!) {
+    addListing(description: $description) {
       _id
-      listingText
+      description
       createdAt
       username
       recommendationCount

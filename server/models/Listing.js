@@ -14,7 +14,7 @@ const listingSchema = new Schema(
             minlength: 4,
             maxlength: 350
         },
-        listingText: {
+        description: {
             type: String,
             required: 'please enter a description',
             minlength: 50,

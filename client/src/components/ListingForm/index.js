@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-
 import { useMutation } from '@apollo/client';
 import { ADD_LISTING } from '../../utils/mutations';
 import { QUERY_LISTINGS, QUERY_ME } from '../../utils/queries';
 import CloudinaryUploadWidget from '../../utils/cloudinary';
 import { renderMatches } from 'react-router-dom';
 
+
 const ListingForm = () => {
-    const [listingText, setListingText] = useState('');
+    const [description, setdescription] = useState('');
     const [listingTitle, setListingTitle] = useState('');
     
     const [addListing, { error }] = useMutation(ADD_LISTING, {
@@ -37,10 +37,10 @@ const ListingForm = () => {
 
         try {
             await addListing({
-                variables: { listingText, listingTitle }
+                variables: { description, listingTitle }
             });
 
-            setListingText('');
+            setdescription('');
         } catch (e) {
             console.error(e);
         }
@@ -59,7 +59,7 @@ const ListingForm = () => {
                 ></input>
                 <input
                     placeholder='yell about it'
-                    defaultValue={listingText}
+                    defaultValue={description}
                 ></input>
                     <div className="App">
                         <h1>Cloudinary</h1>
