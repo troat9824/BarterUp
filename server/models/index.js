@@ -1,5 +1,5 @@
 const Listing = require('./Listing');
 const User = require('./User');
-// const Recommendation = require('./Recommendations');
+const Recommendation = require('./Recommendations');
 
-module.exports = { Listing, User, /*Recommendation*/ };
+module.exports = { Listing, User, Recommendation };

@@ -50,7 +50,7 @@ console.log("working?");
     <div>
       <div className="flex-row mb-3">
         <h2 className="bg-dark text-secondary p-3 display-inline-block">
-          Welcome Back {userParam ? `${user.username}'s` : 'your'}!.
+          Welcome Back {userParam ? `${user.username}` : 'your'}!.
         </h2>
       </div>
 
