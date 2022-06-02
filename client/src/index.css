@@ -103,6 +103,12 @@ label {
   transition: color 0.2s ease-in;
 }
 
+.input-listing {
+  width: 75%;
+  text-align: center;
+  padding: 40px;
+  font-size: 25px;
+}
 .nav-bar a:hover {
   color: #a8b8c3;
 }

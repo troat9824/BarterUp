@@ -8,12 +8,6 @@ const listingSchema = new Schema(
         Photo: {
             type: String
         },
-        listingTitle: {
-            type: String,
-            required: 'please enter a title',
-            minlength: 4,
-            maxlength: 350
-        },
         description: {
             type: String,
             required: 'please enter a description',

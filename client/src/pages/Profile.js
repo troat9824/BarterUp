@@ -46,7 +46,7 @@ const Profile = (props) => {
   };
 
   return (
-    <div>
+    <div className='text-center'>
       <div className="flex-row mb-3">
         <h2 className="bg-dark text-secondary p-3 display-inline-block">
           Welcome Back {userParam ? `${user.username}` : ''}!.

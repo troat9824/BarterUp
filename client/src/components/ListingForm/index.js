@@ -9,8 +9,7 @@ import { renderMatches } from 'react-router-dom';
 
 const ListingForm = () => {
     const [description, setdescription] = useState('');
-    const [listingTitle, setListingTitle] = useState('');
-    
+    const [input, setInput] = useState('')
     const [addListing, { error }] = useMutation(ADD_LISTING, {
         update(cache, { data: { addListing } }) {
 
@@ -37,7 +36,7 @@ const ListingForm = () => {
 
         try {
             await addListing({
-                variables: { description, listingTitle }
+                variables: { description }
             });
 
             setdescription('');
@@ -54,19 +53,14 @@ const ListingForm = () => {
             </p>
             <form onSubmit={handleFormSubmit}>
                 <input
+                    className='input-listing'
                     placeholder='Whatcha got?'
-                    defaultValue={listingTitle}
-                ></input>
-                <input
-                    placeholder='yell about it'
-                    defaultValue={description}
-                ></input>
+                    value={input} onInput={e => setInput(e.target.value)}
+                ></input><br/>
                     <div className="App">
-                        <h1>Cloudinary</h1>
-                        <h2>Upload Widget</h2>
                         <CloudinaryUploadWidget />
                     </div>
-                <button type="submit">Submit</button>
+                <button type="submit" className='sign-in-form-button'>Submit</button>
             </form>
         </div>
     ); 
