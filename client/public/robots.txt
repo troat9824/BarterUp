@@ -1,2 +1,0 @@
-CLOUDINARY_URL='https://843629553421841:0XCuJbKXDxhEbrMBa-rlGdkddQo@api.cloudinary.com/v1_1/dnj7tfymj/resources/image'
-curl https://843629553421841:0XCuJbKXDxhEbrMBa-rlGdkddQo@api.cloudinary.com/v1_1/dnj7tfymj/resources/image
