@@ -1,7 +1,7 @@
-const { Schema } = require('mongoose');
+const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-const recommendationsSchema = new Schema(
+const recommendationSchema = new Schema(
     {
         recommendationBody: {
             type: String,
@@ -25,4 +25,10 @@ const recommendationsSchema = new Schema(
     }
 );
 
-module.exports = recommendationsSchema;
+recommendationSchema.virtual('recommendationCount').get(function() {
+    return this.recommendations.length;
+});
+
+const Recommendation = model('Recommendation', recommendationSchema);
+
+module.exports = Recommendation;
